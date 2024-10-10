@@ -1,0 +1,114 @@
+/* TransactionTable.css */
+
+/* Basic reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Container for the main content */
+.container {
+    max-width: 1500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders are collapsed for a cleaner look */
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Add vertical borders */
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Add a bottom border to each row (for horizontal lines) */
+tr {
+    border-bottom: 1px solid #ddd; /* Line between rows */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Change background on hover */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Search input and month filter styling */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.search-container input,
+.search-container select {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Pagination buttons */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #007bff;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
